@@ -1,0 +1,1031 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="language" content="en,en-US"/>
+    <meta name="location" content="English,United States,United Kingdom,Canada"/>
+    <meta name="author" content="Design:He.Chaomei;Web layout:Song.Guohao"/>
+    <meta name="keywords" content="Naruto, Naruto Online, Naruto OL, Naruto Online Official MMORPG Game, Naruto Official Game."/>
+    <meta name="description" content="Naruto Online Official RPG Game is a web game which is based on the content of the &quot;Naruto&quot; universe. Recall all the story of &quot;Naruto&quot; and experience it yourself with various ninja ready to help you in your path. All fans of &quot;Naruto&quot; will surely be interested in this game and will find it very entertaining."/>
+    <title>Official Naruto MMORPG Game</title>
+    <link rel="shortcut icon" href="//img.oasgames.com/oasevent/1469426786.png"/>
+            <link type="text/css" rel="stylesheet" href="//img.oasgames.com/upload/1515581316/homesite/css/nav.css"/>
+        <script src="//img.oasgames.com/upload/1513737892/static/js/jquery.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/static/css/basic.css?1.3">
+    </head>
+<body>
+    <script type="text/javascript">
+
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-33361405-51', 'auto');
+    ga('send', 'pageview');
+
+    _gaq = [];
+
+
+    function _ga_track_pageview(trackUrl) {
+        ga('send', 'pageview', {page: trackUrl});
+    }
+
+    function _ga_track_event(category, action) {
+        ga('send', 'event', category, action);
+    }
+
+</script>
+    <script type="text/javascript">
+
+    document.domain = 'oasgames.com';
+
+    $OasisSDK = {};
+
+    function _p(data) {
+        if (window.console)
+            window.console.info(data);
+    }
+
+    /**
+     *  show payment
+     */
+    $OasisSDK.showPaymentPage = function () {
+
+        window.onbeforeunload = function (e) {
+            return;
+        };
+
+        var pay_url = 'https://pay.oasgames.com/oasispay/web/index.html?gid=narutoen&lang=en&uid=200000082724863&server_sid=3';
+        window.open(pay_url);
+
+        _p('open payment page on homesite');
+    }
+
+    /**
+     * reload game
+     */
+    $OasisSDK.refreshPage = function (message) {
+
+
+        _p('refresh page');
+
+        window.onbeforeunload = function (e) {
+            return;
+        };
+
+        window.top.location.href = "http://naruto.oasgames.com/en/serverlist/s3";
+    }
+
+    // 兼容
+    var game_pay = $OasisSDK.showPaymentPage;
+    var game_interruption = $OasisSDK.refreshPage;
+
+</script>
+
+<div id="flash_guide_main_panel">
+                
+        <style>
+    #flash_guide_main_panel {
+        display: none;
+        width: 100%;
+        height: 350px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 300px;
+    }
+</style>
+<object style="display: block;margin: 0 auto;" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="60%" height="350px"
+        codebase="https://fpdownload.macromedia.com/get/flashplayer/current/swflash.cab">
+    <param name="movie" value="https://img.oasgames.com/upload/1490002816/empty.swf">
+    <param name="quality" value="high">
+    <param name="allowscriptaccess" value="always">
+    <param name="wmode" value="transparent">
+    <embed src="https://img.oasgames.com/upload/1490002816/empty.swf" quality="high" width="100%" height="350px"
+           align="middle" play="true" loop="false"
+           allowscriptaccess="always" wmode="transparent" type="application/x-shockwave-flash"
+           pluginspage="https://www.adobe.com/go/getflashplayer" title="Adobe Flash Player">
+</object>
+</div>
+
+<script type="text/javascript">
+
+    var OasisSdk = {};
+
+    OasisSdk.show_active_flash_guide = function () {
+        $("#flash_guide_main_panel").show();
+        _ga_track_event('flash-guide','popup');
+        window.onbeforeunload = null;
+        _p('show flash guide process start');
+    }
+
+    OasisSdk.hide_active_flash_guide = function () {
+        $("#flash_guide_main_panel").hide();
+    }
+
+    OasisSdk.pageReload = function () {
+        _ga_track_event('flash-guide','reloadpage');
+        game_interruption();
+    }
+    function copyUrl2(){
+        _ga_track_event('flash-guide','copy-chrome-setting');
+        var Url2=document.getElementById("biao1");
+        Url2.select(); // 选择对象
+        document.execCommand("Copy"); // 执行浏览器复制命令
+        $('.chrome_float').show();
+    }
+
+    $OasisSDK.show_active_flash_guide = function () {
+        OasisSdk.show_active_flash_guide();
+    }
+
+    $OasisSDK.hide_active_flash_guide = function () {
+        OasisSdk.hide_active_flash_guide();
+    }
+
+</script>
+                                        <script src="https://img.oasgames.com/upload/1553679028/play/index.js"></script>
+                                    <div class="oas-bar" id="oas-bar">
+        <div class="oas-bar-minblock"></div>
+        <div class="oas-bar-left">
+            <a class="oas-logo" href="//naruto.oasgames.com/en/" target="_blank">
+                <img border="0"
+                     src="//img.oasgames.com/oasevent/1471255971.png"
+                     alt="logo">
+            </a>
+            <span class="oas-bar-lastServer">S3
+                :Sakura</span>
+            <span class="oas-bar-line"></span>
+            <span class="oas-bar-timeServer">Server time : <span
+                        id="time_num"></span></span>
+
+                <div class='header_gift'>
+        <a href="//events.oasgames.com/chrome-flash/en" target="_blank">
+            <span></span>
+            <i>
+                <label>New Chrome version releasing soon</label><br/>
+                Outline for issue free gameplay            </i>
+        </a>
+    </div>
+        </div>
+        <div class="oas-bar-right">
+            <span class="oas-bar-user-img"></span>
+            <span class="oas-bar-user-text"><a href="//www.oasgames.com/?a=newucenter"
+                                               target="_blank">Klarkyboi</a></span>
+            <span class="oas-bar-line"></span>
+            <a data-title="HOME" class="oas-home" href="//naruto.oasgames.com/en/"
+               target="_blank"></a>
+            <a data-title="Server List" class="oas-serverlist"
+               href="/en/serverlist" target="_blank"></a>
+                        <a data-title="Recharge" class="oas-pay"
+               href="https://pay.oasgames.com/oasispay/web/index.html?gid=narutoen&amp;lang=en&amp;uid=200000082724863&amp;server_sid=3" target="_blank"></a>
+                                    <a data-title="Support" target="_blank" class="oas-help"
+               href="https://support-center.oasgames.com/question/ask?game_code=narutoen&amp;game_language=en&amp;uid=200000082724863&amp;uid_sign=3f341d21a067f98ddc2a66099c5524e0&amp;server_sid=3"></a>
+            <a data-title="Full screen" class="full-screen" href="javascript:void(0);"
+               onclick="GameFullScreen('home_playFrame');"></a>
+            <a data-title="Favourite" class="oas-shortcut" href=""></a>
+            <span class="oas-bar-hide-btn"></span>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="oas-bar-hide" id="oas-bar-hide"></div>
+    <div class="oas-player" id="oas-player">
+        <iframe src="https://naruto-en-es.oasgames.com/main.html?user_name=200000082724863&amp;server_id=3&amp;time=1600805517&amp;client=1&amp;platform=oasis&amp;sign=c0nCqLl+VshDJDBVun/fE4K8vBFDZPG9PEZ2jRo0bpMiS2jznWvJNcuhZIJgLAgskHi8taU+KVcUuktGYh3+n6RaSydV1Q4+SimbaYiHY2PW7dnUXl63/M+AXNOIZQBgidsxG+g//44gk65eSYD59KpPSdp8Gd/6Y9VUvdnP0mI=" width="100%" height="100%" frameborder="0" id="home_playFrame"></iframe>
+    </div>
+
+    <script type="text/javascript">
+        var collect_pop_tip_01 = "Add bookmarks fails, add press Ctrl D";
+        var collect_pop_tip_02 = "Unknown browser version.";
+    </script>
+    <script src="//img.oasgames.com/upload/1516177012/bar.js"></script>
+    <script src="//img.oasgames.com/upload/1513737892/static/js/timejump.js"></script>
+    <script type="text/javascript">
+        var ndate = new DateClock({
+            date: '2020/09/22 16:11:57',
+            callback: function (str) {
+                document.getElementById('time_num').innerHTML = str;
+            }
+        });
+        var mes = "Are you sure you want to exit the game?";
+        function stoprefresh() {
+            return mes;
+        }
+        function UnloadConfirm() {
+            alert(mes);
+        }
+        window.onbeforeunload = stoprefresh; //关闭前的事件
+        window.onunload = UnloadConfirm; //关闭后的事件
+    </script>
+
+    <script src="//connect.facebook.net/en_US/sdk.js" type="text/javascript"></script>
+<script type="text/javascript">
+    FB.init({
+        appId: '447973262074550',
+        cookie: true, // enable cookies to allow the server to access the session
+        xfbml: true, // parse XFBML
+        version: 'v3.1',
+        frictionlessRequests: true
+    });
+
+    FB.Canvas.setAutoGrow();
+</script>
+
+<style type="text/css">
+    #fb_like_tag #closebtn {
+        background: rgba(0, 0, 0, 0) url("//img.oasgames.com/upload/1457600494.png") no-repeat scroll 0 0;
+        cursor: pointer;
+        display: block;
+        height: 30px;
+        position: absolute;
+        right: 47px;
+        top: -13px;
+        width: 30px;
+        z-index: 10;
+    }
+</style>
+
+<div style="display:none;z-index:9999;width: 400px;height: 600px;position: absolute;top: 340px; left: 50%;margin-left: -170px;"
+     id="fb_like_tag">
+    <div id="closebtn" onclick="OAS_FACEBOOK_TOOLS.likePopupClose();"></div>
+    <div class="fb-page"
+         data-href="https://www.facebook.com/naruto.en" data-small-header="true"
+         data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+        <div class="fb-xfbml-parse-ignore">
+            <blockquote cite="https://www.facebook.com/naruto.en">
+                <a href="https://www.facebook.com/naruto.en"></a>
+            </blockquote>
+        </div>
+    </div>
+</div>
+
+<div id="preload_element" style="display: none;">
+    <img src="//img.oasgames.com/upload/1457600494.png"/>
+</div>
+
+<script type="text/javascript">
+    document.domain = "oasgames.com";
+</script>
+<script src="//img.oasgames.com/upload/1534317872/static/oaslib/oas_facebook_tools.js?2" type="text/javascript"></script>
+<script>
+
+    // init OAS fb social js api
+    if (typeof(OAS_FACEBOOK_TOOLS) != 'undefined') {
+        OAS_FACEBOOK_TOOLS.init("Naruto Online", "https://apps.facebook.com/naruto_en", "1736238909950214", "notRequired");
+    }
+
+    // override 'like' method
+    OAS_FACEBOOK_TOOLS.like = function (callback) {
+
+        Naruto_fb_sdk.getFacebookUserId(function (fbuid) {
+
+            if (fbuid.length > 1) {
+                OAS_FACEBOOK_TOOLS.likePopup(callback);
+            }
+            else {
+                callback({result: 'fail,no facebook login user'});
+            }
+        });
+    };
+
+    OAS_FACEBOOK_TOOLS.likePopupNewWindow = function (callback) {
+
+        var winObj = openwindow('//naruto.oasgames.com/en//en/play/fb-likebox', 'likepage', 340, 210);
+        var loop = setInterval(function () {
+            if (winObj.closed) {
+                clearInterval(loop);
+
+                callback({result: 'success'});
+            }
+        }, 1000);
+    };
+
+    OAS_FACEBOOK_TOOLS.oasis_uid = "200000082724863";
+
+</script>
+<script type="text/javascript">
+
+    function openwindow(url, name, iWidth, iHeight) {
+
+        var url;
+        var name;
+        var iWidth;
+        var iHeight;
+        var iTop = (window.screen.availHeight - 30 - iHeight) / 2;       //获得窗口的垂直位置;
+        var iLeft = (window.screen.availWidth - 10 - iWidth) / 2;           //获得窗口的水平位置;
+        var winObj = window.open(url, name, 'height=' + iHeight + ',innerHeight=' + iHeight + ',width=' + iWidth + ',innerWidth=' + iWidth + ',top=' + iTop + ',left=' + iLeft + ',toolbar=no,menubar=no,scrollbars=auto,resizeable=no,location=no,status=no');
+
+        return winObj;
+    }
+</script>
+
+<script type="text/javascript">
+
+    /*
+     *@param type  0 点赞   1 邀请 好友  2分享
+     *@param val  分享的类型 1~n
+     *@return  返回是否成功
+     */
+    function facebookSend(type, val, callback) {
+
+        __p(val);
+
+        var likeCallBack = function (data) {
+
+            __p(data);
+
+            if (data.result == 'nologin') {
+                callback(type, val, false);
+                return;
+            }
+
+            if (data.result == 'success') {
+                callback(type, val, true);
+            }
+            else {
+                callback(type, val, true);
+            }
+        }
+
+        var requestCallBack = function (data) {
+
+            __p(data);
+
+            if (data.request_id != null) {
+
+                Naruto_fb_sdk.saveInviteRecord(data);
+                // success
+                callback(type, val, true);
+
+            }
+            else {
+                //fail
+                callback(type, val, false);
+            }
+
+
+        }
+
+        var shareCallBack = function (data) {
+
+            __p(data);
+
+            if (data.post_id != null) {
+                // success
+                callback(type, val, true);
+
+            }
+            else {
+                //fail
+                callback(type, val, false);
+            }
+
+        }
+
+        // like
+        if (type == "0") {
+            Naruto_fb_sdk.getFacebookUserId(function (fbuid) {
+
+                __p('fb uid is :' + fbuid);
+
+                if (fbuid.length > 1) {
+                    OAS_FACEBOOK_TOOLS.likePopup(likeCallBack);
+                }
+                else
+                {
+                    likeCallBack({result:'nologin'});
+                }
+            });
+        }
+
+        // request
+        if (type == "1") {
+            var params = {
+                'action_type': 1,
+                'title': CONFIG_SHARE_TITLE,
+                'message': CONFIG_INVITE_DESCRIPTION
+                //'filter':1
+            };
+            OAS_FACEBOOK_TOOLS.request(params, requestCallBack);
+        }
+
+        // share
+        if (type == "2") {
+
+            var params = {
+                'share_type': '1',
+                'picture_type': '1',
+                'picture': val[2],
+                'caption': val[0],
+                'description': val[1]
+            };
+
+            OAS_FACEBOOK_TOOLS.share(params, shareCallBack);
+        }
+    }
+
+    /**
+     *@param type   0 返回是否已赞  1 返回已邀请的人数
+     */
+    function facebookGet(type, callback) {
+
+        var likeCallBack = function (data) {
+
+            if (data.result == 'success') {
+                callback(type, true);
+            }
+            else {
+                callback(type, false);
+            }
+        }
+
+        var getInviterCallback = function (data) {
+            __p(data);
+
+            var narutoData = {code: 0, data: []};
+
+            if (data.status == 'ok') {
+                narutoData.code = 1;
+                narutoData.data = data.val;
+            }
+
+            callback(type, narutoData);
+        }
+
+        if (type == "1") {
+            Naruto_fb_sdk.getUserInviters(getInviterCallback);
+        }
+
+        if (type == "0") {
+            OAS_FACEBOOK_TOOLS.like(likeCallBack);
+        }
+
+    }
+
+    var console_out_put_index = 1;
+    function __p(data) {
+        if (window.console) {
+            window.console.info('--naruto fb js lib(' + console_out_put_index + '):');
+            window.console.info(data);
+
+            console_out_put_index++;
+        }
+    }
+
+    var Naruto_fb_sdk = {
+
+        ajaxRequest: function (url, callback) {
+            if (url == null || url.length == 0) {
+                alert('ajaxRequest: url is null');
+                return;
+            }
+            if (url.indexOf('?') > -1) {
+                url += "&callback=?";
+            }
+            else {
+                url += "?callback=?";
+            }
+            $.getJSON(
+                    url,
+                    function (data) {
+                        callback(data);
+                    }
+            );
+        }
+    };
+
+    Naruto_fb_sdk.saveInviteRecord = function (data) {
+
+        var saveInviteData = function (user_fb_uid) {
+
+            __p('the user fb uid is : ' + user_fb_uid);
+
+            if (data.request_id == null) {
+                return;
+            }
+
+            var fSnsUids = data.to.join(',');
+
+            if (fSnsUids.length < 1) {
+                return;
+            }
+
+            var reqUrl = odp_host + '/api/index.php?m=social.saveInviteRecord&game_code=' + game_code + '&u_sns_uid=' + user_fb_uid + '&f_sns_uid=' + fSnsUids + '&request_id=' + data.request_id + '&server_id=' + CONFIG_PLAYING_SID;
+
+            Naruto_fb_sdk.ajaxRequest(reqUrl, function (responseData) {
+                __p(responseData);
+            })
+        };
+
+        Naruto_fb_sdk.getFacebookUserId(saveInviteData);
+
+    }
+
+    Naruto_fb_sdk.getUserInviters = function (callback) {
+
+        var getUserInviters = function (user_fb_uid) {
+
+            var reqUrl = odp_host + '/api/index.php?m=social.getUserInviter&game_code=' + game_code + '&f_sns_uid=' + user_fb_uid + '&server_id=' + CONFIG_PLAYING_SID;
+
+            Naruto_fb_sdk.ajaxRequest(reqUrl, function (responseData) {
+                callback(responseData);
+            })
+        };
+
+        Naruto_fb_sdk.getFacebookUserId(getUserInviters);
+
+    }
+
+    Naruto_fb_sdk.getFacebookUserId = function (callbackFunction) {
+
+        var user_fb_uid = '';
+
+        var setUserFbUid = function (fbResponse) {
+            if (fbResponse.status === 'connected') {
+                user_fb_uid = fbResponse.authResponse.userID;
+                __p('set user fb uid as:' + user_fb_uid);
+            }
+        };
+
+        var main = function () {
+
+            if (typeof(CONFIG_FB_UID) != 'undefined') {
+                user_fb_uid = CONFIG_FB_UID;
+                __p('set user fb uid with initial val:' + CONFIG_FB_UID);
+                callbackFunction(user_fb_uid);
+                return;
+            }
+
+            __p('get fb login user with js sdk:');
+
+            FB.getLoginStatus(function (response) {
+
+                __p(response);
+
+                if (response.status === 'connected') {
+                    setUserFbUid(response);
+                    callbackFunction(user_fb_uid);
+                }
+                else {
+                    FB.login(function (response) {
+                        __p(response);
+                        setUserFbUid(response);
+                        callbackFunction(user_fb_uid);
+                    });
+                }
+            });
+        }();
+
+    }
+
+    Naruto_fb_sdk.isEligiblePromo = function (callback) {
+
+        FB.api('/me', {fields: 'is_eligible_promo'}, function (response) {
+
+            __p(response);
+
+            // get valid response from facebook
+            if(typeof(response.is_eligible_promo) != 'undefined' && response.is_eligible_promo == 1)
+            {
+                callback(true);
+            }
+            else{
+                callback(false);
+            }
+
+        });
+    }
+
+</script>
+
+<script type="text/javascript">
+
+    OAS_FACEBOOK_TOOLS.getAccessToken = function (callbackFunction) {
+
+        var __p = function (data) {
+            if (window.console) {
+                window.console.log(data);
+            }
+        }
+
+        var main = function () {
+
+            FB.getLoginStatus(function (response) {
+
+                __p(response);
+
+                if (response.status === 'connected') {
+                    callbackFunction(response.authResponse.accessToken);
+                }
+                else {
+                    FB.login(function (response) {
+                        __p(response);
+                        callbackFunction(response.authResponse.accessToken);
+                    });
+                }
+            });
+        }();
+
+    }
+
+    /**
+     * 全屏游戏
+     */
+    function GameFullScreen(id) {
+        var playFrame = document.getElementById(id);
+        playFrame.style.width = "100%";
+        if (playFrame.webkitRequestFullScreen) {
+
+            playFrame.webkitRequestFullScreen();
+        } else if (playFrame.msRequestFullscreen) {
+
+            playFrame.msRequestFullscreen();
+        } else {
+
+            alert("Your current browser doesn't support the full screen function, please use the latest version of Chrome, or IE.");
+        }
+    }
+
+</script>
+    <iframe name="conversion_code" src="//www.oasgames.com/ext/conversionCode/index.php?uid=200000082724863&lang=en>"
+        scrolling="no" frameborder="no" framespacing="0" style="border:0px solid white;width:1px;height:1px;"></iframe>
+
+<div style="display:none;width: 0px; height: 0px; border: 0px none;">
+    <iframe name="adtrace" src="//www.oasgames.com/ext/conversionCode/index_cpm.php?lang=en&gamecode=narutoen"></iframe>
+</div>
+            <script type="text/javascript">
+
+    document.domain = 'oasgames.com';
+    var game_code = 'narutoen';
+    var _user_grade_listeners = [];
+    var max_grade = 0;
+    var role_id = 0;
+
+    var url = "//odp3.oasgames.com/api/game/get-user-role?game_code=narutoen&server_id=3&userid=200000082724863&callback=?";
+    $.getJSON(url, function (data) {
+        _p(data);
+        if (data.status == 'ok') {
+
+            max_grade = data.max_grade;
+            role_id = data.roles[0].roleid;
+            OAS_MDATA_LOG.RequestMdataPlayLog();
+
+            if (mdataAppId.length > 1 && gamecode.indexOf('naruto') == 0) {
+                request_mdata_play_log();
+                doGradeLog = true;
+            }
+        }
+        else {
+            _p("fail to get user grade");
+        }
+    });
+
+    $(function () {
+        //1 save ba grade log
+
+        //save_ba_grade_log();
+        setInterval('save_ba_grade_log();', 300000);
+
+        //2 facebook login event log
+        req_facebook_event_log_login();
+    });
+
+
+    function _p(data) {
+        if (window.console)
+            window.console.info(data);
+    }
+
+    function save_ba_grade_log() {
+        var url = "//odp3.oasgames.com/api/game/get-user-role?game_code=narutoen&server_id=3&userid=200000082724863&callback=?";
+        $.getJSON(url, function (data) {
+            _p(data);
+            if (data.status == 'ok') {
+                req_facebook_event_log_grade(data.max_grade);
+                request_dmp_grade_log(data.max_grade);
+                startUserGradeListeners(data.max_grade);
+            }
+            else {
+                _p("fail to get user grade");
+            }
+        });
+    }
+
+    function startUserGradeListeners(grade) {
+        if (_user_grade_listeners.length > 0) {
+            _user_grade_listeners.forEach(function (fn) {
+                fn(grade);
+            });
+        }
+    }
+
+    function is_facebook_cavas_evn() {
+        if (typeof(CONFIG_FB_APP_URL) == "undefined" || typeof(CONFIG_FB_UID) == "undefined") {
+            _p("check is facebook cavas evn: no");
+            return false;
+        }
+        else {
+            _p("check is facebook cavas evn: yes");
+            return true;
+        }
+    }
+
+    function req_facebook_event_log_login() {
+
+        if (is_facebook_cavas_evn() == false) return;
+
+        //
+        FB.AppEvents.activateApp();
+        //
+        FB.AppEvents.logEvent("loginGame");
+        _p("request facebook event log:logingame");
+    }
+
+    function req_facebook_event_log_grade(grade) {
+
+        if (is_facebook_cavas_evn() == false) return;
+
+        var cookie_grade = getCookie_grade('now_grade');
+        if (cookie_grade != undefined && grade <= cookie_grade) {
+            _p("no request for facebook event log: new_grade=" + grade + " and last_grade=" + cookie_grade);
+            return;
+        }
+
+        _p("try to request facebook event log: grade=" + grade);
+        FB.AppEvents.logEvent(FB.AppEvents.EventNames.ACHIEVED_LEVEL, parseInt(grade), {});
+        SetCookie_grade('now_grade', grade);
+        _p("requested facebook event log: grade=" + grade);
+    }
+
+
+    function SetCookie_grade(c_name, value, exdays) {
+        var exdate = new Date();
+        exdate.setDate(exdate.getDate() + exdays);
+        var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+        document.cookie = c_name + "=" + c_value + ';path=/; domain=.oasgames.com';
+    }
+
+    function getCookie_grade(c_name) {
+        var i, x, y;
+        var ARRcookies = document.cookie.split(";");
+        for (i = 0; i < ARRcookies.length; i++) {
+            x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+            y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+            x = x.replace(/^\s+|\s+$/g, "");
+            if (x == c_name) {
+                return unescape(y);
+            }
+        }
+    }
+</script>
+
+<script type="text/javascript">
+
+    var user_stay_log_delay = 2;
+    var user_stay_second_val = 0;
+
+    $(function () {
+        setTimeout(function () {
+            save_user_stay_log();
+        }, user_stay_log_delay * 1000);
+    });
+
+    // with in 180 sec record use stay log
+    // with in 0 - 20 sec :  1/2 sec
+    // with in 20- 180 sec : 1/10 sec
+    // after 180 sec : 1 / 10min
+    function save_user_stay_log() {
+
+        if (user_stay_second_val > 800) {
+            _p('----- stop user stay log ------');
+            return;
+        }
+
+        user_stay_second_val += user_stay_log_delay;
+
+        if (user_stay_second_val >= 20) {
+            user_stay_log_delay = 10;
+        }
+
+        if (user_stay_second_val >= 180) {
+            user_stay_log_delay = 600;
+        }
+
+        // update:只需要上报 staysecond = 780的记录
+        if (user_stay_second_val > 700) {
+
+            // report log data
+            var mdataAppId = "2782137701";
+            var serverid = "3";
+            var logdata = '{"appid":"' + mdataAppId +
+                    '","uuid":"200000082724863","server_id":' + serverid + ',"event":"userstay","version":"","channel":"","subchannel":"","sp_promote":"","params":{"staysecond":"' + user_stay_second_val + '"}}';
+            var url = "/mdata.php?data=" + logdata;
+
+
+            $.getJSON(mdata_host+ url, function (data) {
+                _p('----- record user stay info ------');
+                _p(data);
+            });
+
+            // stop recurs
+            return;
+
+        }
+
+        setTimeout(function () {
+            save_user_stay_log();
+        }, user_stay_log_delay * 1000);
+    }
+
+</script>
+
+
+<script type="text/javascript">
+
+    var mdataAppId = "2782137701";
+    var dmpGradeLogTimes = 0;
+    var doGradeLog = false;
+    var gamecode = "narutoen";
+    var serverArea = "us-east";
+    var serverid = "3";
+
+
+    function request_mdata_play_log() {
+        return;
+        var logdata = '{"appid":"' + mdataAppId +
+                '","uuid":"200000082724863","server_id":' + serverid + ',"event":"play","version":"","channel":"","subchannel":"","sp_promote":"","params":{"area":"' + serverArea + '","grade":"' + max_grade + '"}}';
+        var url = "//dmp.oasgames.com/submit.php?data=" + logdata + '&callback=?';
+
+        $.getJSON(url, function (data) {
+            _p('----- instant user play log ------');
+            _p(data);
+        });
+    }
+
+    function request_dmp_grade_log(grade) {
+
+        return;
+        if (doGradeLog == false) {
+            return;
+        }
+
+        if (dmpGradeLogTimes == 0) {
+            _p('Not to do dmp grade log at page init');
+            dmpGradeLogTimes++;
+            return;
+        }
+
+        var _grade = grade;
+        var logdata = '{"appid":"' + mdataAppId +
+                '","uuid":"200000082724863","server_id":' + serverid + ',"event":"grade","version":"","channel":"","subchannel":"","sp_promote":"","params":{"area":"' + serverArea + '","grade":"' + _grade + '"}}';
+        var url = "//dmp.oasgames.com/submit.php?data=" + logdata + '&callback=?';
+
+        $.getJSON(url, function (data) {
+            _p('----- instant user [Grade] log ------');
+            _p(data);
+        });
+    }
+
+</script>
+        <script type="text/javascript">
+
+    var OAS_MDATA_LOG = {
+        mdataAppId: "2782137701",
+        gamecode: "narutoen",
+        serverArea: "us-east",
+        serverid: "3",
+        max_grade: "",
+        doGradeLogTimes: 0
+    };
+
+    var mdata_host = '//collect.mdata.cool/';
+
+    OAS_MDATA_LOG.RequestMdataPlayLog = function () {
+
+        
+        var logdata = '';
+                var logdata = '{'+
+                        '"appid":"2782137701",' +
+                        '"event":"play",' +
+                        '"server_id":"3",' +
+                        '"uuid":"200000082724863",' +
+                        '"locale":"en",' +
+                        '"browser":"chrome",' +
+                        '"__time_shift":"0",' +
+                        '"promotion_string":"",' +
+                        '"directed":"0",' +
+                        '"params":{'+
+                            '"roleid":"'+role_id+'",' +
+                            '"source":"oas_homesite",' +
+                            '"source_sid":"0",' +
+                            '"grade":"'+max_grade+'",' +
+                            '"server_type":"1",' +
+                            '"area":"us-east",' +
+                            '"first_play_this_game":"n",' +
+                            '"first_play_this_server":"n"'
+                         +'},' +
+                        '"status":{'+
+                            '"grade":"'+ max_grade+'",' +
+                            '"source":"oas_homesite",' +
+                            '"source_sid":"0",' +
+                            '"server_type":"1",' +
+                            '"area":"us-east",' +
+                            '"first_play_this_game":"n",' +
+                            '"first_play_this_server":"n",' +
+                            '"user_from":"0",' +
+                            '"is_bind":""'
+                         +'},' +
+                        '"user_info":{"reg_area":"us-east"}'
+         +'}';
+        
+        var url = "/mdata.php?data=" + logdata;
+
+        if (logdata.length == 0) {
+            return;
+        }
+
+        OAS_MDATA_LOG.MdataUpload(0,url);
+
+
+    };
+
+    OAS_MDATA_LOG.MdataUpload = function (i, url) {
+
+        var mdata_hosts = ['//collect.mdata.cool', '//pin.mdata.cool', '//pin.oasgames.com'];
+        $.getJSON(mdata_hosts[i] + url, function (data) {
+            _p('----- request mdata user play log ------');
+            _p(data);
+            mdata_host = mdata_hosts[i];
+
+        }).fail(function () {
+            if(mdata_hosts[i+1]){
+                OAS_MDATA_LOG.MdataUpload(i+1,url);
+            }
+        });
+    };
+
+
+    OAS_MDATA_LOG.RequestMdataGradeLog = function (max_grade) {
+
+        var logdata = '{"appid":"' + OAS_MDATA_LOG.mdataAppId +
+                '","uuid":"200000082724863","server_id":' + OAS_MDATA_LOG.serverid + ',"event":"grade","promotion_string":"","status":{"grade":"' + max_grade + '"}}';
+
+        var url = "/mdata.php?data=" + logdata;
+
+        $.getJSON(mdata_host + url, function (data) {
+            _p('----- request mdata user grade log ------');
+            _p(data);
+        });
+    };
+
+
+    OAS_MDATA_LOG.RequestMdataAdclickLog = function () {
+
+        
+        var logdata = '';
+
+        
+        var url = "/mdata.php?data=" + logdata;
+
+        if(logdata.length == 0){
+            return;
+        }
+
+        $.getJSON(mdata_host + url, function (data) {
+            _p('----- request mdata ad click log ------');
+            _p(data);
+        });
+    };
+
+
+    // register grade log
+    _user_grade_listeners.push(OAS_MDATA_LOG.RequestMdataGradeLog);
+
+
+</script>
+    </body>
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['VipsacObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//vipsac.oasgames.com/userlistjs.php?lang=en&oasuid=200000082724863&gamecode=narutoen&serverid=3&logintype=3&signature=b7330c6ffe7f772962176f2a3b118c56', 'vipsac');
+</script>
+</html>
